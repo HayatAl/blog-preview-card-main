@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Figtree';
+    src: url('path/to/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900; /* يدعم مجموعة من الأوزان */
+}
+
+@font-face {
+    font-family: 'Figtree Italic';
+    src: url('path/to/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+body{
+    background-color: #F4D04E;
+    height: 100vh;
+    position: relative;
+}
+main
+{
+    width: 384px;
+    height: 522px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    border: 1px solid #111;
+    box-shadow: 8px 8px 1px #111;
+    padding: 24px;
+   
+}
+
+.content{
+    margin-top: 24px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.header {
+    background-color: #F4D04E;
+    width: 82px;
+    height: 29px;
+    padding: 6px 11px;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 900;
+    font-size: 13px;
+    text-shadow: none
+}
+.mid{
+    font-size: 16px;
+    font-weight: thin;
+    margin: 12px 0; 
+    font-family:sans-serif;
+}
+h2{
+    height: 36px;
+    width: 337px;
+    margin: 12px 0;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+h2:hover ,h2:active{
+    color:#F4D04E;
+    text-shadow: none;
+
+}
+.mid2{
+    color:#6B6B6B;
+    margin-bottom: 24px;
+    width:336px;
+ line-height: 23px;
+    font-size: 16px;
+    font-family: 'Figtree', sans-serif;
+}
+.bottom{
+    display: flex;
+    justify-content: start;
+    width: 120px;
+    height: 32;
+  
+}
+.bottom img{
+    width: 32px;
+    height: 32;
+}
+.bottom p{
+    margin-left:12px ;
+    margin-top: 12px;
+    font-family: 'Figtree', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-shadow: none;
+}
+
+@media screen and (max-width:375px) {
+
+    main{
+        width: 100%;
+        max-width: 327px;
+        height: 501px;
+        box-sizing: border-box; 
+    }
+    svg{
+        width: 100%; /* يجعل الصورة تتناسب مع عرض الحاوية */
+        height: auto; /* يحافظ على نسبة العرض إلى الارتفاع للصورة */
+        max-width: 100%;
+    }
+    h2,.mid {
+        font-size: 5vw;
+    }
+    .mid2{
+        font-size: 4vw; 
+        width:100%;
+        max-width: 100%;
+
+    }
+    
+
+}
